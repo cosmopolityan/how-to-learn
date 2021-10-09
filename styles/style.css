@@ -24,8 +24,9 @@ color: #000000; черный (текст)
   min-height: 600px; /* Минимальная высота блока: 600px */ 
   max-height: 756px; /* Максимальная высота блока: 756px; */
   /* выше установили ограничения для секции */
-  background-color: #f2f2f2;
   display: flex;
+  position: relative;
+  background-color: #f2f2f2;
   overflow: hidden;
   z-index: 0;  
 }
