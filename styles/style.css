@@ -15,8 +15,6 @@ color: #000000; черный (текст)
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
-
-  /* border: 2px solid red; */
 }
 
 .header {
@@ -39,7 +37,6 @@ color: #000000; черный (текст)
   font-size: 102px;
   font-weight: bold;  
   z-index: 3;
-  /* border: 2px solid red; */
   align-items: center;
 }
 
@@ -52,7 +49,6 @@ color: #000000; черный (текст)
   bottom: 30px;
   left: 64px;
   z-index: 2;
-  /* border: 2px solid red; */
 }
 
 .header__main-illustration {
@@ -62,7 +58,6 @@ color: #000000; черный (текст)
   right: 0;
   bottom: 0;
   z-index: 1;
-  /* border: 2px solid red; */
 }
 
 .logo_place_header {
@@ -71,12 +66,10 @@ color: #000000; черный (текст)
   height: 32px;
   z-index: 4;
   background-image: url(../images/logo_place_header.svg);
-  /* border: 2px solid red; */
   top: 30px;
   left: 64px;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   position: absolute;
   width: 568px;
@@ -85,7 +78,6 @@ color: #000000; черный (текст)
   right: 0;
   top: 64px;
   z-index: 0;
-  /* border: 2px solid red; */
 }
 
 .description {
@@ -141,6 +133,11 @@ color: #000000; черный (текст)
   text-align: center;
 }
 
+.section-title_theme_dark {
+  border: 2px solid red;
+  color: #ffffff;
+}
+
 .section-subtitle {
   border: 2px solid red;
   margin: 0 auto;
@@ -148,6 +145,12 @@ color: #000000; черный (текст)
   line-height: 34px;
   font-size: 24px;
   text-align: center;
+  font-weight: 500;
+}
+
+.section-subtitle_theme_dark {  
+  border: 2px solid red;
+  color: #ffffff;
 }
 
 .digits {
@@ -160,32 +163,41 @@ color: #000000; черный (текст)
   margin: 0  auto 100px;
 }
 
+.table-row {
+  display: flex;
+  justify-content: space-between;
+}
+
 .table_cell {
   border: 2px solid red;
   width: 250px;
-  padding-top: 60px;
   vertical-align: baseline;
 }
 
-/* и элемента с модификатором вида ключ-значение
+/* Блок__элемент_модификатор(вида ключ_значение) 
+  block__element_key_value */
 .table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
-} */
+}
 
 .table_heading {
   border: 2px solid red;
   line-height: 1.15;
   font-size: 24px;
   font-weight: 700;
+  margin-top: 60px;
+  margin-bottom: 0;
 }
 
 .table_text {
   border: 2px solid red;
   line-height: 1.2;
   font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 0;
 }
 
 .feynman {
@@ -225,6 +237,9 @@ color: #000000; черный (текст)
   font-size: 36px;
 }
 
+.kaufman {
+  background-color: #1f1f1f;
+}
 
 .footer {
   background-color: #1f1f1f;
