@@ -117,9 +117,6 @@ color: #000000; черный (текст)
   width: 80%; 
   min-width: 784px;
   display: table-column;
-
-
-
 }
 
 .two-columns_paragraph {
@@ -134,9 +131,52 @@ color: #000000; черный (текст)
   font-weight: 700;
 }
 
+.section-title {
+  border: 2px solid red;
+  margin: 100px auto 20px;
+  width: 60%;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 700;
+  text-align: center;
+}
 
+.section-subtitle {
+  border: 2px solid red;
+  margin: 0 auto;
+  width: 60%;
+  line-height: 34px;
+  font-size: 24px;
+  text-align: center;
+}
 
+.digits {
+  margin: auto;
+}
+.table {
+  border: 2px solid red;
+  width: 1100px;
+  margin: 0  auto 100px;
+}
+.table_cell {
+  border: 2px solid red;
+  width: 250px;
+  padding-top: 60px;
+  vertical-align: baseline;
+}
 
+.table_heading {
+  border: 2px solid red;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.table_text {
+  border: 2px solid red;
+  line-height: 1.2;
+  font-size: 18px;
+}
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
