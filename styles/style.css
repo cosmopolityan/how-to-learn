@@ -1,8 +1,8 @@
 /* color {
-color: #1f1f1f;
-color: #f2f2f2;
-color: #2f80ed; 
-color: #000000;
+color: #1f1f1f; светло-серый (фон)
+color: #f2f2f2; серый (фон)
+color: #2f80ed; синий (ссылки, фигуры)
+color: #000000; черный (текст)
 } */
 
 
@@ -16,7 +16,7 @@ color: #000000;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 .header {
@@ -25,18 +25,20 @@ color: #000000;
   max-height: 756px; /* Максимальная высота блока: 756px; */
   /* выше установили ограничения для секции */
   background-color: #f2f2f2;
-  border: 2px solid red;
+  display: flex;
+  overflow: hidden;
+  z-index: 0;  
 }
 
 .header__title {
   display: flex;
   margin-left: 64px;
-  width: 730px;
+  max-width: 730px;
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;  
   z-index: 3;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   align-items: center;
 }
 
@@ -46,9 +48,10 @@ color: #000000;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  margin: 0 0 30px 64px;
+  bottom: 30px;
+  left: 64px;
   z-index: 2;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 .header__main-illustration {
@@ -58,14 +61,18 @@ color: #000000;
   right: 0;
   bottom: 0;
   z-index: 1;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 .logo_place_header {
   position: absolute;
-  padding: 0 0 30px 64px;
+  width: 183px;
+  height: 32px;
   z-index: 4;
-  border: 2px solid red;
+  background-image: url(../images/logo_place_header.svg);
+  /* border: 2px solid red; */
+  top: 30px;
+  left: 64px;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -75,11 +82,60 @@ color: #000000;
   height: 568px;  
   background-color: #2f80ed;
   right: 0;
-  top: 0;
-  margin-top: 64px;
+  top: 64px;
   z-index: 0;
+  /* border: 2px solid red; */
+}
+
+.description {
+  background-color: #ffffff;
   border: 2px solid red;
 }
+
+.two-columns {
+  border: 2px solid red;
+  display: flex;
+  margin: auto;
+  width: 80%; 
+  margin-top: 100px;
+  margin-bottom: 100px;
+  justify-content: space-between;
+}
+
+.two-columns_brief {
+  border: 2px solid red;
+  line-height: 1.2;
+  font-size: 18px;
+  color: #2f80ed;
+  width: 175px;
+  font-weight: 400;
+}
+
+.two-columns_main-text {
+  border: 2px solid red;
+  width: 80%; 
+  min-width: 784px;
+  display: table-column;
+
+
+
+}
+
+.two-columns_paragraph {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.two-columns_span-accent {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
+
+
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
@@ -94,5 +150,5 @@ color: #000000;
 
 .footer {
   background-color: #1f1f1f;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
