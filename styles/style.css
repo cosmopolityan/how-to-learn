@@ -163,10 +163,15 @@ color: #000000; черный (текст)
   margin: 0  auto 100px;
 }
 
-.table-row {
-  display: flex;
+tr {
+  display: flex; /* Переназначаю свойства для всего тега <tr>, т.к. браузер не реагирует на заданные классу table-row свойсnва и отображает по умолчанию (display: table-row)*/
   justify-content: space-between;
 }
+
+/* .table-row {
+  display: inline;
+  justify-content: space-between;
+} */
 
 .table_cell {
   border: 2px solid red;
