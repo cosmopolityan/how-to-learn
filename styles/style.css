@@ -1,11 +1,3 @@
-/* color {
-color: #1f1f1f; темно-серый (почти черный) (фон)
-color: #f2f2f2; светло-серый (фон)
-color: #2f80ed; синий (ссылки, фигуры)
-color: #000000; черный (текст)
-} */
-
-
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -18,7 +10,7 @@ color: #000000; черный (текст)
 }
 
 .header {
-  height: 100vh; /* Relative to 100 % of the height of the viewport */
+  height: 100vh;
   min-height: 600px; /* Минимальная высота блока: 600px */
   max-height: 756px; /* Максимальная высота блока: 756px; */
   /* выше установили ограничения для секции */
@@ -31,24 +23,30 @@ color: #000000; черный (текст)
 
 .header__title {
   display: flex;
+  align-self: center;
   margin-left: 64px;
   max-width: 730px;
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
   z-index: 3;
-  align-items: center;
 }
 
 .header__subtitle {
   position: absolute;
+  margin: 0;
+  padding: 0;
   width: 388px;
   line-height: 25px;
   font-size: 18px;
-  font-weight: normal;
+  font-weight: 500;
   bottom: 30px;
   left: 64px;
   z-index: 2;
+}
+
+.header__link {
+  text-decoration: none;
 }
 
 .header__main-illustration {
@@ -92,11 +90,9 @@ color: #000000; черный (текст)
 
 .description {
   background-color: #ffffff;
-  border: 2px solid red;
 }
 
 .two-columns {
-  border: 2px solid red;
   display: flex;
   margin: auto;
   width: 80%;
@@ -106,7 +102,6 @@ color: #000000; черный (текст)
 }
 
 .two-columns__brief {
-  border: 2px solid red;
   margin-top: 0;
   line-height: 1.2;
   font-size: 18px;
@@ -116,7 +111,6 @@ color: #000000; черный (текст)
 }
 
 .two-columns__main-text {
-  border: 2px solid red;
   width: 80%;
   min-width: 784px;
   display: table-column;
@@ -141,7 +135,6 @@ color: #000000; черный (текст)
 }
 
 .section-title {
-  border: 2px solid red;
   margin: 100px auto 20px;
   width: 60%;
   line-height: 1.15;
@@ -151,12 +144,10 @@ color: #000000; черный (текст)
 }
 
 .section-title_theme_dark {
-  border: 2px solid red;
   color: #ffffff;
 }
 
 .section-subtitle {
-  border: 2px solid red;
   margin: 0 auto;
   width: 60%;
   line-height: 34px;
@@ -166,7 +157,6 @@ color: #000000; черный (текст)
 }
 
 .section-subtitle_theme_dark {
-  border: 2px solid red;
   color: #ffffff;
 }
 
@@ -175,9 +165,11 @@ color: #000000; черный (текст)
 }
 
 .table {
-  border: 2px solid red;
   width: 1100px;
   margin: 0  auto 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .table_theme_dark {
@@ -186,18 +178,7 @@ color: #000000; черный (текст)
   z-index: 2;
 }
 
-tr {
-  display: flex; /* Переназначаю свойства для всего тега <tr>, т.к. браузер не реагирует на заданные классу table-row свойсnва и отображает по умолчанию (display: table-row)*/
-  justify-content: space-between;
-}
-
-/* .table-row {
-  display: flex;
-  justify-content: space-between;
-} */
-
 .table__cell {
-  border: 2px solid red;
   width: 250px;
   vertical-align: baseline;
 }
@@ -212,7 +193,6 @@ tr {
 }
 
 .table__heading {
-  border: 2px solid red;
   line-height: 1.15;
   font-size: 24px;
   font-weight: 700;
@@ -225,7 +205,6 @@ tr {
 }
 
 .table__text {
-  border: 2px solid red;
   line-height: 1.2;
   font-size: 18px;
   margin-top: 20px;
@@ -233,7 +212,6 @@ tr {
 }
 
 .feynman {
-  border: 2px solid red;
   position:relative;
   min-height: 900px; /* спорное (временное?) решение*/
   background-color: #f2f2f2;
@@ -243,16 +221,16 @@ tr {
 }
 
 .feynman__title {
-  border: 2px solid red;
   margin: 100px auto 0 auto;
+  padding-top: 100px;
   width: 648px;
   line-height: 1.15;
   font-size: 120px;
   font-weight: 700;
+  text-align: center;
 }
 
 .feynman__subtitle {
-  border: 2px solid red;
   margin: 70px auto 0 auto;
   line-height: 51px;
   font-size: 36px;
@@ -261,12 +239,12 @@ tr {
 }
 
 .feynman__link {
-  border: 2px solid red;
   position: absolute;
   top: 50%;
   right: 48px;
   line-height: 51px;
   font-size: 36px;
+  text-decoration: none;
 }
 
 .kaufman {
@@ -288,14 +266,13 @@ tr {
 .footer {
   display: flex;
   justify-content: center;
-  border: 2px solid red;
+
   min-height: 350px;
   background-color: #1f1f1f;
   color: #ffffff;
 }
 
 .footer__columns {
-  border: 2px solid red;
   display: flex;
   justify-content: space-between;
   width: 90%;
@@ -310,7 +287,6 @@ tr {
 }
 
 .footer__column_content_copyright {
-  border: 2px solid red;
   flex-basis: 711px;
   display: flex;
   flex-direction: column;
