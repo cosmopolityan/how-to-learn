@@ -1,7 +1,3 @@
-li {
-  list-style: none;
-}
-
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -21,11 +17,12 @@ li {
   display: flex;
   position: relative;
   background-color: #f2f2f2;
-  overflow: hidden;
   z-index: 0;
 }
 
 .header__title {
+  margin-top: 0;
+  margin-bottom: 0;
   display: flex;
   align-self: center;
   margin-left: 64px;
@@ -43,7 +40,7 @@ li {
   width: 388px;
   line-height: 25px;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400; /* Исправлено со значения 500. 400 == normal */
   bottom: 30px;
   left: 64px;
   z-index: 2;
@@ -51,6 +48,7 @@ li {
 
 .header__link {
   text-decoration: none;
+  color: #2f80ed; /* Добавлено */
 }
 
 .header__main-illustration {
@@ -148,6 +146,7 @@ li {
 }
 
 .section-title_theme_dark {
+  margin-top: 90px;
   color: #ffffff;
 }
 
@@ -171,6 +170,7 @@ li {
 .table {
   width: 1100px;
   margin: 0  auto 100px;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -185,6 +185,7 @@ li {
 .table__cell {
   width: 250px;
   vertical-align: baseline;
+  list-style: none; /* Добавлено, чтобы избежать присвоения свойства тегу li */
 }
 
 /* Блок__элемент_модификатор(вида ключ_значение)
@@ -217,7 +218,7 @@ li {
 
 .feynman {
   position:relative;
-  min-height: 900px; /* спорное (временное?) решение*/
+  min-height: 890px; /* Исправлено с 900px. Просто проглядел в брифе, что есть конкретное значение для этого свойства ¯\_(ツ)_/¯ */
   background-color: #f2f2f2;
   background-image: url(../images/feynman.png);
   background-position: left bottom;
@@ -239,7 +240,7 @@ li {
   line-height: 51px;
   font-size: 36px;
   text-align: center;
-  font-weight: 500;
+  font-weight: 400; /* Исправлено со значения 500. 400 == normal */
 }
 
 .feynman__link {
@@ -249,6 +250,7 @@ li {
   line-height: 51px;
   font-size: 36px;
   text-decoration: none;
+  color: #2f80ed; /* Добавлено */
 }
 
 .kaufman {
@@ -261,6 +263,8 @@ li {
 .kaufman__triangle {
   width: 877px;
   height: 877px;
+  background-image: url(../images/kaufman-triangle.svg);
+  background-size: 877px 877px;
   position: absolute;
   top: 0;
   right: -210px;
@@ -305,7 +309,9 @@ li {
 }
 
 .footer__column-links {
+  margin: 0 0 16px 0; /* Изменено */
   padding: 0;
+  list-style: none; /* Добавлено, чтобы избежать присвоения свойства тегу li */
 }
 
 .footer__column-link {
@@ -313,10 +319,6 @@ li {
   font-size: 18px;
   color: #ffffff;
   text-decoration: none;
-}
-
-.footer__column-link:last-child {
-  padding-bottom: 16px;
 }
 
 .footer__social-icon {
