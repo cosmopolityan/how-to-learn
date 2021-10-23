@@ -1,0 +1,5 @@
+.table__cell {
+  width: 250px;
+  vertical-align: baseline;
+  list-style: none;
+}

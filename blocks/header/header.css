@@ -1,0 +1,10 @@
+.header {
+  height: 100vh;
+  min-height: 600px; /* Минимальная высота блока: 600px */
+  max-height: 756px; /* Максимальная высота блока: 756px; */
+  /* выше установили ограничения для секции */
+  display: flex;
+  position: relative;
+  background-color: #f2f2f2;
+  z-index: 0;
+}
