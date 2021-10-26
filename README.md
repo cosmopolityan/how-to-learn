@@ -20,7 +20,7 @@
 
 ## Используемые технологии
 
-Сайт написан на HTML5 и CSS3.
-Структура файлов организована по [БЭМ-методологии](https://ru.bem.info/)
-В ходе разработки активно использовались [Chrome DevTools](https://developer.chrome.com/docs/devtools/)
-Работа с репозиторием велась с помощью VCS [Git](https://ru.wikipedia.org/wiki/Git)
+* Сайт написан на HTML5 и CSS3.
+* Структура файлов организована по [БЭМ-методологии](https://ru.bem.info/)
+* В ходе разработки активно использовались [Chrome DevTools](https://developer.chrome.com/docs/devtools/)
+* Работа с репозиторием велась с помощью VCS [Git](https://ru.wikipedia.org/wiki/Git)
