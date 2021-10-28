@@ -1,9 +1,11 @@
 .khan__book-link {
+  align-self: baseline; /* Свойство добавлено, теперь ссылка только на буквах, а не растянута вниз до конца родительского контейнера*/
   line-height: 42px;
   font-size: 30px;
   font-weight: 400;
   text-decoration: none;
   color: #2f80ed;
+  transition: 1s; /* Свойство добавлено */
   opacity: 1;
 }
 

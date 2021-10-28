@@ -1,6 +1,7 @@
 .cards__title {
+  margin: 0; /* Значение обнулено */
   line-height: 1.15;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 700; /* Изменено с 600 */
   text-align: center;
 }

@@ -2,6 +2,7 @@
   width: 183px;
   height: 32px;
   background-repeat: no-repeat;
+  transition: 1s; /* Добавлено свойство */
   opacity: 1;
 }
 

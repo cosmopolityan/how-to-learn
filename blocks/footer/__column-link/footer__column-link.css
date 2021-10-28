@@ -3,6 +3,7 @@
   font-size: 18px;
   color: #ffffff;
   text-decoration: none;
+  transition: 1s; /* Добавлено свойство */
   opacity: 1;
 }
 
